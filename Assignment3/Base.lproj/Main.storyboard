@@ -27,23 +27,22 @@
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g95-lE-qAF">
                                 <rect key="frame" x="36.666666666666657" y="318" width="320" height="216"/>
                             </datePicker>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CSe-pt-eII">
-                                <rect key="frame" x="10" y="734" width="383" height="108"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CSe-pt-eII">
+                                <rect key="frame" x="10" y="728" width="373" height="104"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDi-c1-54l">
-                                        <rect key="frame" x="50.666666666666657" y="0.0" width="282" height="44"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Start Timer / Stop Music">
-                                            <backgroundConfiguration key="background" strokeWidth="3">
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
-                                            <color key="baseForegroundColor" red="0.098128907380000005" green="0.1018028334" blue="0.109805055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Start Timer">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startAndStopAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mya-lK-kEh"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Remaining: 00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayX-34-oAG" userLabel="time_remaining">
-                                        <rect key="frame" x="47.666666666666657" y="64" width="287.66666666666674" height="44"/>
+                                        <rect key="frame" x="0.0" y="62" width="373" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -56,8 +55,8 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="8UC-Mn-JIq" secondAttribute="bottom" id="03G-Bi-j7M"/>
                             <constraint firstItem="CSe-pt-eII" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="36X-zK-y5F"/>
-                            <constraint firstAttribute="bottom" secondItem="CSe-pt-eII" secondAttribute="bottom" constant="10" id="B5p-LZ-ysi"/>
-                            <constraint firstAttribute="trailing" secondItem="CSe-pt-eII" secondAttribute="trailing" id="Cf5-AT-ZPh"/>
+                            <constraint firstAttribute="bottom" secondItem="CSe-pt-eII" secondAttribute="bottom" constant="20" id="B5p-LZ-ysi"/>
+                            <constraint firstAttribute="trailing" secondItem="CSe-pt-eII" secondAttribute="trailing" constant="10" id="Cf5-AT-ZPh"/>
                             <constraint firstItem="8UC-Mn-JIq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EaM-TL-twO"/>
                             <constraint firstItem="8UC-Mn-JIq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FZG-cF-6co"/>
                             <constraint firstAttribute="trailing" secondItem="8UC-Mn-JIq" secondAttribute="trailing" id="JUX-QX-izv"/>
@@ -71,6 +70,7 @@
                     <connections>
                         <outlet property="background" destination="8UC-Mn-JIq" id="fV1-ck-k9a"/>
                         <outlet property="clock" destination="7hq-L1-Wpe" id="bgf-sL-Zzn"/>
+                        <outlet property="startAndStop" destination="CDi-c1-54l" id="eiu-pT-sgz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -78,9 +78,4 @@
             <point key="canvasLocation" x="-127.48091603053435" y="-27.464788732394368"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
