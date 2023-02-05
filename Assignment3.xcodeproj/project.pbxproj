@@ -16,6 +16,7 @@
 		C38D9C2C2988D25200EAD054 /* Assignment3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38D9C2B2988D25200EAD054 /* Assignment3Tests.swift */; };
 		C38D9C362988D25200EAD054 /* Assignment3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38D9C352988D25200EAD054 /* Assignment3UITests.swift */; };
 		C38D9C382988D25200EAD054 /* Assignment3UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38D9C372988D25200EAD054 /* Assignment3UITestsLaunchTests.swift */; };
+		C38D9C492990411700EAD054 /* alarm.wav in Resources */ = {isa = PBXBuildFile; fileRef = C38D9C482990411700EAD054 /* alarm.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C38D9C312988D25200EAD054 /* Assignment3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38D9C352988D25200EAD054 /* Assignment3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment3UITests.swift; sourceTree = "<group>"; };
 		C38D9C372988D25200EAD054 /* Assignment3UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment3UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C38D9C482990411700EAD054 /* alarm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = alarm.wav; path = ../../../../Downloads/alarm.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				C38D9C142988D25100EAD054 /* AppDelegate.swift */,
 				C38D9C162988D25100EAD054 /* SceneDelegate.swift */,
 				C38D9C182988D25100EAD054 /* ViewController.swift */,
+				C38D9C482990411700EAD054 /* alarm.wav */,
 				C38D9C1A2988D25100EAD054 /* Main.storyboard */,
 				C38D9C1D2988D25200EAD054 /* Assets.xcassets */,
 				C38D9C1F2988D25200EAD054 /* LaunchScreen.storyboard */,
@@ -233,6 +236,7 @@
 			files = (
 				C38D9C212988D25200EAD054 /* LaunchScreen.storyboard in Resources */,
 				C38D9C1E2988D25200EAD054 /* Assets.xcassets in Resources */,
+				C38D9C492990411700EAD054 /* alarm.wav in Resources */,
 				C38D9C1C2988D25100EAD054 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

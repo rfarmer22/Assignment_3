@@ -41,12 +41,23 @@
                                             <action selector="startAndStopAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mya-lK-kEh"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Remaining: 00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayX-34-oAG" userLabel="time_remaining">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hTa-Ib-ica">
                                         <rect key="frame" x="0.0" y="62" width="373" height="42"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Remaining:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayX-34-oAG" userLabel="timeRemainingLabel">
+                                                <rect key="frame" x="0.0" y="0.0" width="277.66666666666669" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJ1-yl-txq" userLabel="actualTimeRemaining">
+                                                <rect key="frame" x="297.66666666666669" y="0.0" width="75.333333333333314" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -70,7 +81,9 @@
                     <connections>
                         <outlet property="background" destination="8UC-Mn-JIq" id="fV1-ck-k9a"/>
                         <outlet property="clock" destination="7hq-L1-Wpe" id="bgf-sL-Zzn"/>
+                        <outlet property="datePicker" destination="g95-lE-qAF" id="3iv-oE-5tA"/>
                         <outlet property="startAndStop" destination="CDi-c1-54l" id="eiu-pT-sgz"/>
+                        <outlet property="timeLeftLabel" destination="zJ1-yl-txq" id="YjA-9Z-ZdZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
